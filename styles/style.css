@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Sacar los botones del input number */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* General */
+
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 54px;
+    margin: 55px 10px 20px 10px;
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Header */
+
+header{
+    transition: all 300ms;
+    height: 70px;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #00000010;
+    box-shadow: 5px 0px 5px 0px #0000001e;
+    display: grid;
+    place-content: center;
+}
+
+header nav ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.botones{
+ margin: 0px 15px 0px 15px;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+    transition: all 0.5s;
+}
+
+.botones:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+section{
+    border-bottom: 2px solid #00000010;
+    padding-bottom: 5vh;
+}
+
+.portada{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.empresas{
+    width: auto;
+}
+
+.empresas-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 1s;
+    transform: translateX(-40%);
+}
+
+.empresas-container img {
+    transition: all 0.8s;
+}
+
+.empresas-container:hover img {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.empresas-detalles {
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+    z-index: 90;
+}
+
+.empresas-detalles a h2{
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(33,37,41);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+  }
+
+
+
+.info{
+    font-size: 1.4rem;
+    font-family: "roboto", sans-serif;
+    text-align: justify;
+}
+
+.form-control{
+    font-size: 14px;
+    border: 1px solid rgb(33,37,41);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border: 1px solid rgb(33,37,41);
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 15px 25px;
+    min-width: 160px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(33,37,41);;
+    color: white;
+    border: 2px solid rgb(33,37,41);;
+}
+
+.inicio{
+    background-color: rgb(248, 248, 248);
+    padding-top: 2vh;
+}
+
+#clientes{
+        background-color: rgb(248, 248, 248);
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+}
+
+input:focus + label{
+    transform: translateY(-12px) scale(.7);
+}
+
+.service{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+}
+
+.service i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.service p{
+    font-family: "Roboto", sans-serif;
+
+}
+
+.service:hover{
+    background: #212529;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.service:hover i{
+    color: #fff;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+}
+
+.numero{
+    text-decoration: none;
+    color: rgb(33,37,41);;
+    font-weight: bold;
+}
+
+button p{
+    margin: 0;
+}
+
+button p:hover{
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img{
+    height: 5.5vh;
+    margin-bottom: 1rem;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.botones2{
+    margin: 0px 10px 0px 10px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.botones2:hover{
+    transform: scale(1.05);
+    color: rgb(33,37,41);
+    transition: all 0.5s;
+}
+
+footer ul li a{
+    color: rgb(33,37,41);
+}
+
+.copyright{
+    opacity: 0.4;
+    font-size: 0.75rem;
+}
+
+.carousel-item, .carousel, .carousel-inner{
+    border-radius: 5px;
+}
+
+.tituloInfo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.centrar{
+    display: grid;
+    place-items: center;
+}
+
+.blur{
+    filter: blur();
+    -webkit-filter: blur(2px);
+}
+
+.divImagenes{
+    width: 100%;
+    height: 100%;
+}
+
+.divImagenes img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacts{
+    transform: translateX(-30%);
+}
+
+.show{
+    transform: translateX(0%);
+    transition: all 0.8s;
+}
+

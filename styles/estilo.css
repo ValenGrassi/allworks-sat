@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Celular */
+@media (max-width: 1024px){
+    
+.right{
+    width: 100vw;
+    height: 50vh;
+}
+
+.imgRight{
+    background: url(../images/antena.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 35s;
+}
+
+.left{
+    width: 100vw;
+    height: 50vh;
+}
+
+.imgLeft{
+    background: url(../images/rack.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 35s;
+}
+
+.blur{
+    filter: blur();
+    -webkit-filter: blur(2px);
+}
+
+.link{
+    position: relative;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo1{
+    width: 20vw;
+    height: auto;
+}
+
+.logo2{
+    width: 20vw;
+    height: auto;
+}
+    
+}
+
+/* Pantalla */
+@media (min-width:1024px){
+
+.split{
+    display: flex;
+}
+
+.right{
+    width: 50vw;
+    height: 100vh;
+}
+
+.imgRight{
+    background: url(../images/antena.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+}
+
+.imgLeft{
+    background: url(../images/rack.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.blur{
+    filter: blur();
+    -webkit-filter: blur(2px);
+}
+
+.link1{
+    position: relative;
+    top: 79%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.link2{
+    position: relative;
+    top: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo1{
+    width: 25vw;
+    height: auto;
+}
+
+.logo2{
+    width: 20vw;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton1{
+    font-family: "teko", sans-serif;
+    font-size: 1em;
+    position: relative;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    background: black;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+    width: 8vw;
+    transition: .5s;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.boton2{
+    font-family: "teko", sans-serif;
+    font-size: 1em;
+    position: relative;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    background: black;
+    color: #dcc2e4;
+    cursor: pointer;
+    width: 8vw;
+    transition: .5s;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+button:hover{
+    color: #fff;
+}
+
+button span {
+    position: absolute;
+    background: #fff;
+    transition: .5s;
+}
+
+button span:nth-child(1){
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2){
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3){
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4){
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1){
+    left: 0;
+}
+
+button:hover span:nth-child(2){
+    right: 0;
+}
+
+button:hover span:nth-child(3){
+    bottom: 0;
+}
+
+button:hover span:nth-child(4){
+    top: 0;
+}
+
+}
