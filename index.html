@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Works - Página Oficial</title>
+<meta name="keywords" content="allworks, all works, all works ingenieria, all works engineering, antenas, programacion">
+<meta name="description" content="Página web oficial de all works ingeniería, empresa líder en tecnologías y servicios de vanguardia. ¡Sé parte del cambio y conviértete en nuestro cliente!">
+<title>All Works Ingeniería - Página Oficial</title>
+<link rel="canonical" href="https://allworks.com.ar">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="shortcut icon" href="/images/Favicon.png" type="image/png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -11,117 +14,153 @@
 <link rel="stylesheet" href="/styles/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <section style="border: 0px;">
+  <section class="principal">
     <div class="container portada">
       <h1 class="titulo">All Works Engineering</h1>
-      <h2 class="subtitulo">Ingeniería en sistemas y <b>automatizacion</b>.</h2>
+      <h3 class="subtitulo">Ingeniería en sistemas y automatización.</h3>
+    </div>
+    <div id="divFlecha">
+      <span class="js flecha"></span>
+      <span class="js flecha"></span>
+    </div>
   </section>
 
-  <header data-aos="fade-up" id="header" class="">
+  <header data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500" id="header" class="">
     <nav>
       <div class="container">
-          <ul>
-            <li class="botones">
-              <a class="nav-link active" aria-current="page" href="#inicio">Nosotros</a>
-            </li>
-            <li class="botones">
-              <a class="nav-link active" aria-current="page" href="#servicios">Servicios</a>
-            </li>
-            <li class="botones">
-              <a class="nav-link active" aria-current="page" href="#clientes">Clientes</a>
-            </li>
-            <li class="botones">
-              <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li class="botones">
+            <a class="nav-link active" aria-current="page" href="#nosotros">Sobre Nosotros</a>
+          </li>
+          <li class="botones">
+            <a class="nav-link active" aria-current="page" href="#servicios">Servicios</a>
+          </li>
+          <li class="botones">
+            <a class="nav-link active" aria-current="page" href="#clientes">Clientes</a>
+          </li>
+          <li class="botones">
+            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <section class="inicio" id="inicio">
-    <h1 data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">¿Quiénes somos?</h1>
-    <h2 data-aos="fade-right">Somos proveedores <b>líder</b> de tecnologías y servicios de vanguardia.</h2>
+  <section class="nosotros" id="nosotros">
+    <h2 data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">¿Quiénes somos?</h2>
+    <h3 data-aos="fade-right" data-aos-duration="700">Somos proveedores <b>líder</b> de tecnologías y servicios de
+      vanguardia.</h3>
     <div class="container">
-    <div class="row mt-4">
-      <div class="col-md-7" style="height: 75vh;">
-        <div id="carouselExampleSlidesOnly" class="divImagenes carousel slide h-100" data-bs-ride="carousel">
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100" data-bs-interval="3000">
-              <img src="./images/Paneles.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item h-100" data-bs-interval="3000">
-              <img src="./images/VSC.png" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100" data-bs-interval="3000">
-              <img src="./images/camara.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item h-100" data-bs-interval="3000">
-              <img src="./images/racks-servidor.jpg" class="d-block w-100" alt="...">
+      <div class="row md-4 divInfo">
+        <div class="col-md-7 divFotos">
+          <div id="carouselExampleSlidesOnly" class="divImagenes carousel slide h-100" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100" data-bs-interval="3000">
+                <img src="./images/paneles.webp" class="d-block w-100" alt="paneles">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/VSC.png" class="d-block w-100 h-100" alt="visual studio code">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/camara.jpg" class="d-block w-100" alt="camara">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/racks-servidor.jpg" class="d-block w-100" alt="rack servidor">
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-md-5 centrar">
+          <div data-aos="fade-right">
+            <p class="info">Contamos con soluciones escalables para empresas de todos los tamaños.
+              <br>Sabemos analizar la información para que nuestra oferta se
+              ajuste siempre a las necesidades cambiantes del mercado. <br>
+              ¡Sé parte del cambio y conviértete en nuestro cliente!</p>
+            <div class="centrar"><button id="boton3">Ver más</button></div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 centrar">
-        <div>
-          <p class="info">Somos proveedores líder de tecnologías y servicios de vanguardia. Contamos con soluciones
-            escalables para empresas de todos los tamaños. Sabemos analizar la información para que nuestra oferta se
-            ajuste siempre a las necesidades cambiantes del mercado. <br>
-            ¡Sé parte del cambio y conviértete en nuestro cliente!</p>
+      <div class="row md-4 divInfo">
+        <div class="col-md-5 centrar">
+          <div data-aos="fade-right">
+            <p class="info">Contamos con soluciones escalables para empresas de todos los tamaños.
+              <br>Sabemos analizar la información para que nuestra oferta se
+              ajuste siempre a las necesidades cambiantes del mercado. <br>
+              ¡Sé parte del cambio y conviértete en nuestro cliente!</p>
+            <div class="centrar"><button id="boton3">Ver más</button></div>
+          </div>
+        </div>
+        <div class="col-md-7 divFotos">
+          <div id="carouselExampleSlidesOnly" class="divImagenes carousel slide h-100" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100" data-bs-interval="3000">
+                <img src="./images/paneles.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/VSC.png" class="d-block w-100 h-100" alt="...">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/camara.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item h-100" data-bs-interval="3000">
+                <img src="./images/racks-servidor.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    </div>
   </section>
 
   <section id="servicios">
-      <div class="container">
-        <h1 data-aos="fade-down">Servicios ejecutados a la perfección</h1>
-        <h2 data-aos="fade-right">Contamos con los <b>mejores profesionales</b> del mercado, <br>y la mejor mercadería disponible.</h2>
-        <div class="grid">
-          <div class="service">
-            <i class="bi bi-pc-display"></i>
-            <h3>Soporte técnico</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-          <div class="service">
-            <i class="bi bi-code-square"></i>
-            <h3>Programación</h3>
-            <p>Diseño y mantenimiento de páginas web responsivas.</p>
-          </div>
-          <div class="service">
-            <i class="bi bi-camera-video"></i>
-            <h3>CCTV</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-          <div class="service">
-            <i class="bi bi-telephone"></i>
-            <h3>Telefonía IP</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-          <div class="service">
-            <i class="bi bi-pc-display"></i>
-            <h3>Soporte técnico</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-          <div class="service">
-            <i class="bi bi-pc-display"></i>
-            <h3>Soporte técnico</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
+    <div class="container">
+      <h2 data-aos="fade-down">Servicios ejecutados a la perfección</h2>
+      <h3 data-aos="fade-right">Contamos con los <b>mejores profesionales</b> del mercado, <br>y la mejor mercadería
+        disponible.</h3>
+      <div class="grid">
+        <div class="service" id="servTec">
+          <i class="bi bi-pc-display"></i>
+          <h4 class="tituloService">Soporte técnico</h4>
+          <p class="textoService">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="service" id="programacion">
+          <i class="bi bi-code-square"></i>
+          <h4 class="tituloService">Programación</h4>
+          <p class="textoService">Diseño y mantenimiento de páginas web responsivas.</p>
+        </div>
+        <div class="service" id="cctv">
+          <i class="bi bi-camera-video"></i>
+          <h4 class="tituloService">CCTV</h4>
+          <p class="textoService">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="service" id="telefonia">
+          <i class="bi bi-telephone"></i>
+          <h4 class="tituloService">Telefonía IP</h4>
+          <p class="textoService">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="service" id="antenas">
+          <i class="bi bi-broadcast-pin"></i>
+          <h4 class="tituloService">Antenas satelitales</h4>
+          <p class="textoService">Tecnología punta, únicos proveedores en el país. <br>Ver también <a href="/portada.html" target="_blank" class="numero">All Works & SAT.</a></p>
+        </div>
+        <div class="service" id="estructura">
+          <i class="bi bi-building-fill"></i>
+          <h4 class="tituloService">Soluciones de estructura</h4>
+          <p class="textoService">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
         </div>
       </div>
+    </div>
   </section>
 
   <section id="clientes">
     <div class="container">
-      <h1 data-aos="fade-down">Nuestros clientes son de talla mundial</h1>
-      <h2 data-aos="fade-right">Si ellos confiaron en nosotros,<b> ¿Por qué vos no lo harías?</b></h2>
+      <h2 data-aos="fade-down">Nuestros clientes son de talla mundial</h2>
+      <h3 data-aos="fade-right">Si ellos confiaron en nosotros,<b> ¿Por qué vos no lo harías?</b></h3>
 
       <div class="">
         <div class="empresas row mx-auto mb-4">
@@ -129,69 +168,78 @@
             <div class="empresas-container">
               <div class="empresas-detalles">
                 <a href="https://www.powerchina.com.ar/" target="_blank">
-                  <h2>PowerChina</h2>
+                  <h3>PowerChina</h3>
                 </a>
               </div>
-              <img src="/images/powerchina xd.jpg" class="img-fluid blur" alt="Portfolio 01">
+              <img src="/images/powerchina.webp" class="img-fluid blur" alt="powerchina">
             </div>
           </div>
           <div class="col-md-6 mb-4">
             <div class="empresas-container">
               <div class="empresas-detalles">
-                <a href="#">
-                  <h2>Cinecolor</h2>
+                <a href="https://argentina.cinecolorgroup.com" target="_blank">
+                  <h3>Cinecolor</h3>
                 </a>
               </div>
-              <img src="/images/cinecolor xd.jpg" class="img-fluid blur" alt="Portfolio 02">
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="empresas-container">
-              <div class="empresas-detalles">
-                <a href="#">
-                  <h2>Cinemark</h2>
-                </a>
-              </div>
-              <img src="/images/cinemark xd.jpg" class="img-fluid blur" alt="Portfolio 03">
+              <img src="/images/cinecolor.webp" class="img-fluid blur" alt="cinecolor">
             </div>
           </div>
           <div class="col-md-6">
             <div class="empresas-container">
               <div class="empresas-detalles">
-                <a href="#">
-                  <h2>Hoyts</h2>
+                <a href="https://www.cinemarkhoyts.com.ar/" target="_blank">
+                  <h3>Cinemark</h3>
                 </a>
               </div>
-              <img src="/images/hoyts xd.jpg" class="img-fluid blur" alt="Portfolio 04">
+              <img src="/images/cinemark.webp" class="img-fluid blur" alt="cinemark">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="empresas-container h-100">
+              <div class="empresas-detalles">
+                <a href="https://www.multiplex.com.ar/" target="_blank">
+                  <h3>Multiplex</h3>
+                </a>
+              </div>
+              <img src="/images/multiplex.webp" class="img-fluid blur h-100" alt="multiplex">
             </div>
           </div>
         </div>
       </div>
 
-      <div id="carouselExampleDark" class="carousel carousel-dark slide mx-auto" data-bs-ride="carousel" >
-        <div class="carousel-indicators" >
+      <div id="carouselExampleDark" class="divImagenes2 carousel carousel-dark slide mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators indicadores">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2" ></button>
+            aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="/images/Hoyts Final.jpg" class="d-block w-50 mx-auto" alt="...">
+          <div class="carousel-item active h-100" data-bs-interval="2000">
+            <img src="/images/DZE Final.jpg" class="d-block w-100 " alt="dze">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/images/PowerChina Final.JPG" class="d-block w-50 mx-auto" alt="...">
+            <img src="/images/Feedback Seguridad.jpg" class="d-block w-100 h-100" alt="feedback seguridad">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/images/Wamco Final 2.jpg" class="d-block w-50 mx-auto" alt="...">
+            <img src="/images/Wamco Final 2.jpg" class="d-block w-100 h-100" alt="wamco">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/images/Rotofrance Final.jpg" class="d-block w-50 mx-auto" alt="...">
+            <img src="/images/Rotofrance Final.jpg" class="d-block w-100 h-100" alt="rotofrance">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/images/Horqueta Final.jpg" class="d-block w-100 h-100" alt="la horqueta rehabilitacion">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/images/AmericanC Final.JPG" class="d-block w-100 h-100" alt="american confort">
           </div>
         </div>
       </div>
@@ -200,21 +248,19 @@
 
   <section id="contacto">
     <div class="container">
-      <h1 data-aos="fade-down">¿Deseas contactarte con nuestro equipo?</h1>
-      <h2 data-aos="fade-right">Envianos tu mensaje, te contestaremos dentro de 48 horas.<br>También podés llamar al
-        <a class="numero" href="tel:1124611212">11-5103-4677</a>.</h2>
-      <div class="container">
+      <h2 data-aos="fade-down">¿Deseas contactarte con nuestro equipo?</h2>
+      <h3 data-aos="fade-right">Envianos tu mensaje, te contestaremos dentro de 48 horas.<br>También podés llamar al
+        <a class="numero" href="https://api.whatsapp.com/send?phone=1151034677" target="_blank">11-5103-4677</a>.</h3>
         <div class="row">
           <div class="col-md-6 mt-3">
             <iframe class="contacts"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13163.855833423957!2d-58.88458!3d-34.4276706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6655c548fcfe0f54!2sBarrio%20Cerrado%20La%20Nazarena!5e0!3m2!1ses-419!2sar!4v1657202942862!5m2!1ses-419!2sar"
-              allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-md-6 mt-4">
             <form id="form" action="https://formspree.io/f/xayzwvry" method="POST">
               <div data-aos="fade-right" class="row">
-                <div class="col-md-6 mb-3" >
+                <div class="col-md-6 mb-3">
                   <input type="text" class="form-control" id="" placeholder="Nombre" name="Nombre">
                 </div>
                 <div class="col-md-6 mb-3 ">
@@ -224,31 +270,37 @@
                   <input type="text" class="form-control" id="" placeholder="Nombre de la compañía" name="Compañía">
                 </div>
                 <div class="col-md-12 my-3 ">
-                  <input type="email" class="form-control" id="" placeholder="E-mail (requerido)" name="E-mail" required>
+                  <input type="email" class="form-control" id="" placeholder="E-mail (requerido)" name="E-mail"
+                    required>
                 </div>
                 <div class="col-md-12 my-3 ">
-                  <input type="text" class="form-control" id="" placeholder="Mensaje (requerido)" name="Mensaje" required>
+                  <input type="text" class="form-control" id="" placeholder="Mensaje (requerido)" name="Mensaje"
+                    required>
                 </div>
                 <div class="col-md-12 my-3 ">
-                  <button class="btn btn-secondary full-width" type="submit"><p>Contactar</p></button>
+                  <button class="enviar btn-secondary full-width" type="submit">
+                    <p>Contactar</p>
+                  </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
   <footer>
-    <img src="./images/prueba2 negro.png" alt="">
+    <div class="divFooter">
+      <img src="./images/prueba3 negro.png" alt="" class="logo">
+      <img src="/images/pruebaSat2.png" alt="" class="logo">
+    </div>
     <ul>
-      <li class="botones2"><a href="#">Inicio</a></li>
+      <li class="botones2"><a href="#nosotros">Sobre Nosotros</a></li>
       <li class="botones2"><a href="#servicios">Servicios</a></li>
       <li class="botones2"><a href="#clientes">Clientes</a></li>
       <li class="botones2"><a href="#contacto">Contacto</a></li>
     </ul>
-    <span class="copyright">2022, All Works. Todos los derechos reservados ®.
+    <span class="copyright">2023, All Works. Todos los derechos reservados ©
       <br>
     </span>
   </footer>
@@ -258,7 +310,8 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./javascript/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();
+  <script>
+    AOS.init({once: true, disable: "mobile"});
   </script>
 </body>
 

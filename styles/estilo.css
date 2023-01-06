@@ -90,12 +90,13 @@
 }
 
 .imgLeft{
-    background: url(../images/rack.jpg);
+    background: url(/images/servidor.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     transition: all 300ms;
+    margin: auto;
 }
 
 .blur{
@@ -105,10 +106,11 @@
 
 .link1{
     position: relative;
-    top: 79%;
+    top: 74.6%;
     display: flex;
     justify-content: center;
     text-align: center;
+    filter: drop-shadow(1px 1px 1px);
 }
 
 .link2{
@@ -117,10 +119,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    filter: drop-shadow(1px 1px 1px);
 }
 
 .logo1{
-    width: 25vw;
+    width: 16vw;
     height: auto;
 }
 
@@ -144,13 +147,12 @@
     border: none;
     outline: none;
     background: black;
-    color: rgb(180, 180, 180);
+    color: #cacaca;
     cursor: pointer;
     width: 8vw;
     transition: .5s;
     overflow: hidden;
     margin-top: 10px;
-    border-radius: 3px;
 }
 .boton2{
     font-family: "teko", sans-serif;
@@ -160,7 +162,7 @@
     border: none;
     outline: none;
     background: black;
-    color: #dcc2e4;
+    color: #cacaca;
     cursor: pointer;
     width: 8vw;
     transition: .5s;
