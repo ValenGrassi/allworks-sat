@@ -314,7 +314,7 @@ iframe{
 .form-control{
     font-size: 0.9rem;
     border: 1px solid var(--primary);
-    padding: 6px;
+    padding: 15px;
     border-radius: 5px;
 }
 
