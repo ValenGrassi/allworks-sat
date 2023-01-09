@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 /* Sacar los botones del input number */
 input::-webkit-inner-spin-button,
@@ -12,7 +13,7 @@ input::-webkit-outer-spin-button{
 /* General */
 
 :root{
-    font-size: 18px;
+    font-size: 16px;
     --primary:rgb(33,37,41);
     --background: rgb(248, 248, 248);
     --default-font: "Roboto", sans-serif;
@@ -42,7 +43,7 @@ h1{
 h2{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: clamp(1.5rem, 2vw + 1.1rem, 10rem);
+    font-size: clamp(1.5rem, 2vw + 0.4rem, 10rem);
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -50,7 +51,7 @@ h2{
 h3{
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
-    font-size: clamp(1.3rem, 2vw + 0.57rem, 9rem);
+    font-size: clamp(1.3rem, 2vw + 0.2rem, 9rem);
     margin-bottom: 40px;
 }
 
@@ -70,9 +71,11 @@ a:link, a:visited {
     margin: 0;
     border: 0;
     height: 100vh;
-    background:url(/images/fondo.jpg);
+    background:url(/images/fondo2.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
     background-size: cover;
-    background-position:top;
 }
 
 .portada{
@@ -118,7 +121,7 @@ a:link, a:visited {
 /* Header */
 header{
     transition: all 300ms;
-    height: 70px;
+    height: clamp(5rem, 4vw + 0.1rem , 9rem);
     z-index: 100;
     background-color: white;
     border: 1px solid #00000010;
@@ -129,8 +132,8 @@ header{
 
 header li{
     font-family: var(--default-font);
-    font-size: 1rem;
-    margin: 0px 15px 0px 15px;
+    font-size: clamp(0.8rem, 0.9vw + 0.1rem , 5rem);
+    margin: 0px 1rem 0px 1rem;
     text-align: center;
 }
 
@@ -152,40 +155,65 @@ header ul{
     background-color: var(--background);
 }
 
-.divInfo{
-    padding: 5vh 0;
-}
-
-.divFotos{
-    height: 75vh;
-    transition: all 0.3s;
-    transform: translateX(-100%);
+.divImagenes,.divImagenes{
+    margin: 5rem 0;
 }
 
 .info{
-    font-size: clamp(1rem, 1vw + 0.5rem, 6rem);
+    font-size: clamp(0.7rem, 1.1vw + 0.2rem, 6rem);
     font-family: var(--default-font)
 }
 
-#boton3 {
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    width: 100px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    border: 2px solid var(--primary);
+.tituloInfo{
+    font-family: 'Alex Brush', cursive;
+    font-size: clamp(1.5rem, 1.1vw + 1rem, 6rem);
+    font-weight: 600;
 }
 
 .divImagenes{
-    width: 100%;
-    height: 100%;
+    width: 63vw;
+    height: 100%;    
 }
 
 .divImagenes img{
-    width: 100%;
+    aspect-ratio: 3/4;
+    height: 90vh;
+    object-fit: none;
+}
+
+.divImagenes2{
+    width: 63vw;
     height: 100%;
+    margin-left: auto;
+}
+
+.divImagenes2 img{
+    aspect-ratio: 3/4;
+    height: 90vh;
+    object-fit: none;
+}
+
+.nuevo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 100;
+    width: 48vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 17%, rgba(248,248,248,1) 100%);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.nuevo2{
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+    width: 48vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(250,250,250,1) 79%, rgba(255,255,255,1) 100%);
+    padding: 40px;
+    border-radius: 5px;
 }
 
 .hide{
@@ -221,7 +249,7 @@ header ul{
 }
 
 .service i{
-    font-size: 40px;
+    font-size: clamp(1.25rem, 1.5vw + 0.6rem, 6rem);
     margin-bottom: 10px;
 }
 
@@ -229,11 +257,12 @@ header ul{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-bottom: 8px;
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 1.5vw + 0.3rem, 6rem);
 }
 
 .textoService{
     font-family: var(--default-font);
+    font-size: clamp(1rem, 1vw + 0.3rem, 6rem);
 }
 
 .service:hover{
@@ -253,9 +282,23 @@ header ul{
     background-color: var(--background);
 }
 
+.clientes-right{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.clientes-left{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
 .empresas{
-    width: auto;
-    padding: 0 1vw 0 1vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    width: 70vw;
 }
 
 .empresas-container {
@@ -264,6 +307,7 @@ header ul{
     border-radius: 5px;
     transition: all 1s;
     transform: translateX(-40%);
+    height: 100%;
 }
 
 .empresas-container img {
@@ -283,38 +327,48 @@ header ul{
 }
 
 .empresas-detalles a h3{
+    font-size: clamp(1rem, 2.2vw + 0.3rem, 6rem);
     margin-bottom: 0;
     margin-left: 1rem;
     color: white;
     text-shadow: 5px 5px 5px var(--primary);
 }
 
-.carousel-item, .carousel, .carousel-inner{
-    border-radius: 5px;
+.divImagenes3{
+    width: 30vw;
+    margin: auto !important ;
+    display: grid;
 }
 
-.divImagenes2{
-    width: 35%;
-    height: 35vh;
+.divImagenes3 img{
+    width: 100%
 }
+
 
 
 /* Contacto */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
 .contacts{
     transform: translateX(-30%);
+    height: 60vh;
 }
 
 iframe{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    border: 1px solid #cacaca;
+    border: 1.5px solid #cacaca;
 }
 
 .form-control{
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     border: 1px solid var(--primary);
-    padding: 15px;
+    padding: 1rem;
     border-radius: 5px;
 }
 
@@ -325,8 +379,8 @@ iframe{
 }
 
 .enviar {
-    font-size: 14px;
-    padding: 15px 25px;
+    font-size: 0.95rem;
+    padding: 1rem;
     border-radius: 5px;
     display: inline-block;
     width: 100%;
@@ -483,17 +537,174 @@ footer a:hover::after{
     }
 }
 
-@media(max-width: 450px){
-    .divFotos{
-        height: 30vh;
-        width: 90vw;
-        margin: auto;
+@media(max-width: 1000px){
+    .principal{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        height: 100vh;
+        background:url(/images/fondoCelular.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-position-y:bottom;
+        background-size: 500px;
     }
-    .divImagenes2{
-        width: 100vw;
-        height: auto;
-    }
-    body{
-        zoom: 80%;
+    .divInfo, .divInfo3{
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }  
+
+
+
+    .show{
+        transform: translateX(0%);
+        transition: all 0.8s;
     }
 }
+
+@media(max-width: 700px){
+
+    .principal{
+        height: 100dvh;
+        background-size: clamp(20rem, 60vw + 0.6rem, 30rem);
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        padding: 0;
+    }
+    .service{
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor:pointer;
+        background: transparent;
+        transition: all 0.3s;
+        margin: 10px 0;
+    }
+    
+    .service i{
+        font-size: clamp(1.25rem, 1.5vw + 0.6rem, 6rem);
+        margin-bottom: 10px;
+    }
+    
+    .tituloService{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-bottom: 8px;
+        font-size: clamp(1.25rem, 1.5vw + 0.3rem, 6rem);
+    }
+    
+    .textoService{
+        font-family: var(--default-font);
+        font-size: clamp(1rem, 1vw + 0.3rem, 6rem);
+    }
+
+
+    #nosotros h3{
+        margin-bottom: 0;
+    }
+
+    .divImagenes{
+        width: 100%;
+        height: 100%;    
+        margin: 0;
+    }
+    
+    .divImagenes img{
+        aspect-ratio: 3/4;
+        height: 50vh;
+        object-fit:cover;
+    }
+    
+    .divImagenes2{
+        width: 100%;
+        height: 100%;    
+        margin: 0;
+    }
+    
+    .divImagenes2 img{
+        aspect-ratio: 3/4;
+        height: 50vh;
+        object-fit:cover;
+    }
+    
+    .nuevo{
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        background: none;
+        padding: 2rem 0;
+        border-radius: 5px;
+    }
+    
+    .nuevo2{
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        background: none;
+        padding: 2rem 0;
+        border-radius: 5px;
+    }
+    #nosotros{
+        padding-bottom: 0;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    footer ul{
+        flex-direction: column;
+        margin: 0;
+    }
+    footer li{
+        padding: 0.5rem 0;
+    }
+
+    #contacto, #servicios{
+        padding-bottom: 0;   
+    }
+
+    .divInfo,.divInfo3{
+        padding: 0;
+    }
+
+    .divImagenes3{
+        width: 65vw;
+        margin: auto !important ;
+        display: grid;
+        border-radius: 5px;
+    }
+
+    .empresas{
+        display: grid;
+        grid-template-columns: 100%;
+        place-items: center;
+        width: 70vw;
+    }
+    
+    .empresas-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        transition: all 1s;
+        transform: translateX(-40%);
+        height: 100%;
+    }
+
+
+
+    .show{
+        transform: translateX(0%);
+        transition: all 0.8s;
+    }
+}
+
