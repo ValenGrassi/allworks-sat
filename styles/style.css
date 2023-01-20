@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 /* Sacar los botones del input number */
 input::-webkit-inner-spin-button,
@@ -71,7 +72,7 @@ a:link, a:visited {
     margin: 0;
     border: 0;
     height: 100vh;
-    background:url(/images/fondo2.jpg);
+    background:url(/images/fondo.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-position-y:bottom;
@@ -278,72 +279,67 @@ header ul{
 }
 
 /* Clientes */
-#clientes{
-    background-color: var(--background);
-}
 
-.clientes-right{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-}
-
-.clientes-left{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-}
-
-.empresas{
+.faqs{
     display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
-    width: 70vw;
+    place-content: center;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
-.empresas-container {
-    position: relative;
+.pregunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-family: "rock salt", cursive;
+}
+
+.respuesta{
+    max-height: 0;
     overflow: hidden;
-    border-radius: 5px;
-    transition: all 1s;
-    transform: translateX(-40%);
-    height: 100%;
+    transition: max-height 1.4s ease;
 }
 
-.empresas-container img {
-    transition: all 0.8s;
+.respuesta p{
+    font-family: var(--default-font);
+    padding-top: 1rem;
+    font-size: 1.2rem;
 }
 
-.empresas-container:hover img {
-    transform: scale(1.1);
-    transition: all 1s;
+.respuesta i{
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
 }
 
-.empresas-detalles {
-    position: absolute;
-    bottom: 20px;
-    left: 5px;
-    z-index: 90;
+.faq.active .respuesta{
+    max-height: 300px;
+    animation: fade 0.7s ease-in-out;
 }
 
-.empresas-detalles a h3{
-    font-size: clamp(1rem, 2.2vw + 0.3rem, 6rem);
-    margin-bottom: 0;
-    margin-left: 1rem;
-    color: white;
-    text-shadow: 5px 5px 5px var(--primary);
+.faq.active svg{
+    transform: rotate(180deg);
 }
 
-.divImagenes3{
-    width: 30vw;
-    margin: auto !important ;
-    display: grid;
+svg{
+    transition: transform .5s ease-in;
 }
 
-.divImagenes3 img{
-    width: 100%
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
-
 
 
 /* Contacto */
@@ -542,12 +538,11 @@ footer a:hover::after{
         padding: 0;
         margin: 0;
         border: 0;
-        height: 100vh;
-        background:url(/images/fondoCelular.jpg);
+        height: 100dvh;
         background-position: right;
         background-repeat: no-repeat;
         background-position-y:bottom;
-        background-size: 500px;
+        background-size: clamp(20rem, 100vw + 2rem, 60rem);
     }
     .divInfo, .divInfo3{
         background-repeat: no-repeat;
@@ -566,7 +561,7 @@ footer a:hover::after{
 
     .principal{
         height: 100dvh;
-        background-size: clamp(20rem, 60vw + 0.6rem, 30rem);
+        background-size: clamp(40rem, 100vw + 0.6rem, 60rem);
     }
 
     .grid{
